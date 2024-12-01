@@ -1,0 +1,156 @@
+/* Background gambar dengan efek transparansi */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/admin/img/login.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Menjamin bahwa body mencakup seluruh tinggi viewport */
+    overflow: hidden; /* Mencegah scrollbar jika gambar lebih besar dari viewport */
+    position: relative; /* Untuk memastikan overlay ditempatkan dengan benar */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    filter: grayscale(100%); 
+    z-index: -1; 
+}
+
+
+.form-container .form-floating label {
+    color: black; /* Warna teks label yang kontras dengan background form */
+    font-size: 14px;
+}
+
+/* Gaya untuk form login dan registrasi */
+.login-container {
+    background-color: #005b66; /* Warna latar belakang form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+    margin-top: 50px; /* Jarak dari atas */
+    color: #ffffff; /* Warna teks dalam form */
+}
+
+/* Gaya untuk input form */
+.login-container .form-floating {
+    margin-bottom: 15px; /* Jarak antar elemen form */
+}
+
+.login-container .form-control {
+    border-radius: 5px; /* Membuat sudut input melengkung */
+    border: 1px solid #005b66; /* Warna bingkai input */
+    background-color: #ffffff; /* Warna latar belakang input */
+    color: #000000; /* Warna teks input */
+}
+
+/* Gaya untuk tombol login dengan kelas .btn */
+.btn {
+    background-color: #696969; /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    border: none; /* Menghapus border default tombol */
+    padding: 10px 20px; /* Menentukan ukuran tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover di tombol */
+    font-size: 16px; /* Ukuran font pada tombol */
+    transition: background-color 0.3s; /* Efek transisi untuk perubahan warna */
+}
+
+/* Gaya untuk tombol dengan kelas .btn saat hover */
+.btn:hover {
+    background-color: #005b66; /* Warna latar belakang saat tombol di-hover */
+}
+
+/* Gaya untuk link Register Now */
+a {
+    color: #ffffff; /* Warna teks link */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+/* Gaya saat hover */
+a:hover {
+    color: #ffffff; /* Warna teks link saat hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.table-container {
+    max-height: 400px; /* Sesuaikan dengan kebutuhan */
+    overflow: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem; /* Menyesuaikan padding tombol */
+    font-size: 0.875rem; /* Ukuran font tombol */
+}
+
+.action-icon {
+    font-size: 16px; /* Ukuran ikon */
+}
+
+.table-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.content {
+    max-height: calc(100vh - 100px); /* Tinggi viewport minus tinggi footer */
+    overflow-y: auto;
+}
+
+.scrollable-form {
+    max-height: 600px; /* Sesuaikan dengan kebutuhan */
+    overflow-y: auto; /* Tambahkan scroll vertikal */
+    padding-right: 15px; /* Menambahkan padding kanan agar scrollbar tidak menutupi konten */
+}
+
+/* Ubah warna untuk kotak dengan kelas bg-info */
+.bg-info-custom {
+    background-color: #c9c9df; /* Ubah dengan warna yang Anda inginkan */
+}
+
+
+.bg-success-custom {
+    background-color: #4de655; 
+}
+
+/* Ubah warna untuk kotak dengan kelas bg-warning */
+.bg-warning-custom {
+    background-color: #ffc107; 
+}
+
+.bg-danger-custom {
+    background-color: #dc3545; /* Ubah dengan warna yang Anda inginkan */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

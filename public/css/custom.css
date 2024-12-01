@@ -1,0 +1,30 @@
+/* Mengubah warna sidebar menjadi #005b66 */
+.main-sidebar {
+    background-color: #005b66 !important;
+}
+
+/* Mengubah warna latar belakang dashboard menjadi #36a5b2 */
+.content-wrapper {
+    background-color: #36a5b2 !important;
+}
+
+/* custom.css */
+
+.small-box.custom-box {
+  background-color: #005b66; /* Warna latar belakang baru */
+  color: #ffffff; /* Warna teks baru */
+}
+
+.small-box.custom-box .inner {
+  padding: 20px; /* Padding tambahan */
+}
+
+.small-box.custom-box .icon {
+  top: 10px; /* Posisi ikon baru */
+}
+
+.small-box.custom-box a.small-box-footer {
+  background-color: #003d47; /* Warna latar belakang footer baru */
+  color: #ffffff; /* Warna teks footer baru */
+  border-radius: 0 0 5px 5px; /* Tambahkan border radius pada bagian bawah */
+}
